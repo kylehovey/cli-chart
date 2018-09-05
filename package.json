@@ -1,0 +1,15 @@
+{
+  "name": "cli-chart",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Kyle Hovey",
+  "license": "MIT",
+  "private": true,
+  "bin": {
+    "chart": "index.js"
+  },
+  "dependencies": {
+    "asciichart": "^1.5.7",
+    "mathjs": "^5.1.1"
+  }
+}
