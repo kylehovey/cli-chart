@@ -25,6 +25,9 @@ const step = Math.abs(rangeSize / width);
 console.log(`f(x) = ${input} from ${from} to ${to} with step ${step}:`);
 
 console.log(asciichart.plot(
-  Array(width).fill().map((_, i) => func(from + i * step)),
+  Array(width)
+    .fill()
+    .map((_, i) => func(from + i * step))
+    .map(val => typeof(val) === 'number' ? val : 0),
   { height }
 ));
